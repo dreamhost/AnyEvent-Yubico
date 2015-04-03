@@ -39,11 +39,11 @@ $validator->{urls} = [ "http://127.0.0.1:0" ];
 
 is($validator->verify_async("vvgnkjjhndihvgdftlubvujrhtjnllfjneneugijhfll")->recv()->{status}, "Connection refused", "invalid URL");
 
-$validator->{urls} = $default_urls;
-$validator->{local_timeout} = 0.01;
+$validator->{local_timeout} = 0.0001;
 
 is($validator->verify_sync("vvgnkjjhndihvgdftlubvujrhtjnllfjneneugijhfll")->{status}, "Connection timed out", "timeout");
 
+$validator->{urls} = $default_urls;
 $validator->{local_timeout} = 30.0;
 
 subtest 'Tests that require access to the Internet' => sub {

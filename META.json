@@ -1,0 +1,36 @@
+{
+   "no_index" : {
+      "directory" : [
+         "t",
+         "inc"
+      ]
+   },
+   "build_requires" : {
+      "Test::Exception" : "0.29",
+      "Test::More" : "0.98"
+   },
+   "distribution_type" : "module",
+   "generated_by" : "ExtUtils::MakeMaker version 6.57_05",
+   "name" : "AnyEvent-Yubico",
+   "abstract" : "AnyEvent based Perl extension for validating YubiKey OTPs.",
+   "configure_requires" : {
+      "ExtUtils::MakeMaker" : "0"
+   },
+   "license" : "unknown",
+   "requires" : {
+      "UUID::Tiny" : "1.0",
+      "URI::Escape" : "1.54",
+      "MIME::Base64" : "3.13",
+      "Net::SSLeay" : "1.36",
+      "AnyEvent::HTTP" : "2.13",
+      "Digest::HMAC_SHA1" : "1.02"
+   },
+   "version" : "0.9.3_01",
+   "author" : [
+      "Dain Nilsson <dain@yubico.com>"
+   ],
+   "meta-spec" : {
+      "version" : "1.4",
+      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html"
+   }
+}
